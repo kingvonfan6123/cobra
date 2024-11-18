@@ -19,8 +19,3 @@ def compile(source_code):
             bytecode.extend(bytecode_map[char] for char in text)
             bytecode.append(bytecode_map['\n'])
     return (bytecode, len(bytecode))
-
-source_code = """
-show->Hello, World!
-show->This is custom bytecode.
-"""
